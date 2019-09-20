@@ -1,0 +1,7 @@
+node('ubununode1') {
+    stage('VCS') {
+        git 'https://github.com/vashokkumar/jenkisbuildpractise.git'
+    }
+            stage ('package'){
+            sh 'mvn package'
+    }
